@@ -1,0 +1,25 @@
+﻿<Window x:Class="MyBMFont.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyBMFont"
+        mc:Ignorable="d"
+        Title="MyBMFontTool" Height="350" Width="555" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="mybmfont.ico" Drop="Window_Drop" AllowDrop="True">
+    <Grid Margin="0,0,13,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Height="191" Width="524" />
+        <!--<Button x:Name="delAll" Content="删除选中项" Margin="0,285,150,0" VerticalAlignment="Top" RenderTransformOrigin="0.958,0.595" Foreground="Red" Click="delSelect_Click" HorizontalAlignment="Right" Width="75" Grid.Column="2"/>-->
+        <TextBox x:Name="bmfontPathTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Margin="145,0,0,0"/>
+        <Label Content="BMFont.com路径：" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="119" Height="23"/>
+        <TextBox x:Name="fontInfoTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Margin="145,23,0,0"/>
+        <Label Content="字体信息生成路径：" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="119" Height="23"/>
+        <Button x:Name="button" Content="生成字体信息" Margin="10,0,0,10" Width="75" Click="generator_Click" RenderTransformOrigin="0.493,0.421" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <TextBox x:Name="imageFolderNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" Margin="145,51,0,0"/>
+        <Label Content="图片文件夹名字：" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="119" Height="23"/>
+        <!--<Button x:Name="button_Copy" Content="刷新界面" HorizontalAlignment="Left" Margin="135,285,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy_Click"/>-->
+
+    </Grid>
+</Window>
